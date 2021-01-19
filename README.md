@@ -52,6 +52,10 @@ The plugin 'spring-boot-maven-plugin' allows you to package executable jar or wa
 ## Project structure
 ![image](https://user-images.githubusercontent.com/21175250/105104764-37fe7180-5ab3-11eb-801f-4422da6c741e.png)
 
+Main class                          => DemoApplication.java<br/>
+A controller with two url mappings  => HelloWorldController.java<br/>
+View 1                              => index.html<br/>
+View 2                              => index-tongasoa.html<br/>
 
 ## DemoApplication.java
 ```java
