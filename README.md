@@ -91,3 +91,35 @@ public class HelloWorldController {
     }
 }
 ```
+
+## index.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<body>
+    <h1>Hello World !</h1>
+
+    <h3>*************</h3>
+</body>
+</html>
+```
+
+## index-tongasoa.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<body>
+    <h1>Tonga soa !</h1>
+
+    <h3>*************</h3>
+</body>
+</html>
+```
