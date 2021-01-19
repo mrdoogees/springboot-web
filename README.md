@@ -1,4 +1,7 @@
-# Packag war | jar Web application #
+# Web application | war archive #
+This template can be used to create a simple web application in Spring boot.<br/>
+Especially, if you have an instance of tomcat server (not an umbedable one).<br/>
+The war file is generated in target folder after building the project
 
 ## pom.xml
 The plugin 'spring-boot-maven-plugin' allows you to package executable jar or war archives
@@ -45,6 +48,10 @@ The plugin 'spring-boot-maven-plugin' allows you to package executable jar or wa
     </build>
 </project>
 ```
+
+## Project structure
+![image](https://user-images.githubusercontent.com/21175250/105104764-37fe7180-5ab3-11eb-801f-4422da6c741e.png)
+
 
 ## DemoApplication.java
 ```java
