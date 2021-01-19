@@ -44,8 +44,6 @@
         </plugins>
     </build>
 </project>
-...
-
 
 ### DemoApplication.java
 
