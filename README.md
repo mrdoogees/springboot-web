@@ -1,4 +1,4 @@
-# Web application | war archive #
+# Web application | Springboot | war package  #
 This template can be used to create a simple web application in Spring boot.<br/>
 Especially, if you have an instance of tomcat server (not an umbedable one).<br/>
 The war file is generated in target folder after building the project
