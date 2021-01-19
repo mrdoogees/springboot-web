@@ -1,9 +1,8 @@
-# Web application with war packaging #
+# Packag war | jar Web application #
 
-### pom.xml
-
+## pom.xml
+The plugin 'spring-boot-maven-plugin' allows you to package executable jar or war archives
 ```xml
-
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -45,4 +44,50 @@
         </plugins>
     </build>
 </project>
+```
+
+## DemoApplication.java
+```java
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
+@SpringBootApplication
+public class DemoApplication extends SpringBootServletInitializer {
+
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(DemoApplication.class);
+    }
+}
+```
+
+## HelloWorldController.java
+```java
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Controller
+public class HelloWorldController {
+
+    @RequestMapping("/welcome")
+    public String index() {
+        return "index";
+
+    }
+
+    @RequestMapping("/tongasoa")
+    public String indexTongasoa() {
+        return "index-tongasoa";
+
+    }
+}
 ```
